@@ -1,5 +1,5 @@
 import Nav from "./nav"
-
+import Login from "./Login"
 
 export default function Header() {
 
@@ -15,10 +15,12 @@ export default function Header() {
     }
 
     return (
-        <header style={styles.header}>
+        <header className="bg-white dark:bg-gray-800 flex items-center justify-between gap-x-4 p-3">
 
             <h1>Header</h1>
             <Nav />
+            <Login />
+            
             
         </header>
     )
